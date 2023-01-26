@@ -20,7 +20,7 @@ public class Calificacion {
 	@DynamoDBAttribute
 	private Usuario usuario;
 	
-	public Calificacion() {}
+	/*public Calificacion() {}
 	
 	public Calificacion(Double nota, Usuario usuario) {
 		this.nota = nota;
@@ -38,6 +38,6 @@ public class Calificacion {
 	}
 	public void setUsuario(Usuario usuario) {
 		this.usuario = usuario;
-	}
+	}*/
 	
 }

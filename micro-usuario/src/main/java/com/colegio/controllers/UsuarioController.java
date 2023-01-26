@@ -34,19 +34,19 @@ public class UsuarioController {
 
     @PostMapping("/usuario")
     public ResponseEntity<Usuario> create(@RequestBody Usuario usuarioDto){
-        if(usuarioService.existsId(usuarioDto.getUsuarioId()))
+        /*if(usuarioService.existsId(usuarioDto.getUsuarioId()))
             return new ResponseEntity("el id ya existe", HttpStatus.BAD_REQUEST);
         if(usuarioService.existsIdentificacion(usuarioDto.getIdentificacion()))
-            return new ResponseEntity("ese nombre ya existe", HttpStatus.BAD_REQUEST);
+            return new ResponseEntity("ese nombre ya existe", HttpStatus.BAD_REQUEST); */
         return ResponseEntity.ok(usuarioService.saveUsuario(usuarioDto));
     }
 
     @PutMapping("/usuario")
     public ResponseEntity<Usuario> update(@RequestBody Usuario usuarioDto){
-        if(!usuarioService.existsId(usuarioDto.getUsuarioId()))
+        /*if(!usuarioService.existsId(usuarioDto.getUsuarioId()))
             return new ResponseEntity("no existe", HttpStatus.NOT_FOUND);
         if(usuarioService.existsIdentificacion(usuarioDto.getIdentificacion()) && !usuarioService.getOne(usuarioDto.getUsuarioId()).getIdentificacion().equals(usuarioDto.getIdentificacion()))
-            return new ResponseEntity("ese nombre ya existe", HttpStatus.BAD_REQUEST);
+            return new ResponseEntity("ese nombre ya existe", HttpStatus.BAD_REQUEST); */
         return ResponseEntity.ok(usuarioService.updateUsuario(usuarioDto));
     }
 

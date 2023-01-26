@@ -30,12 +30,12 @@ public class UsuarioServiceImpl implements IUsuarioService {
 
 	@Override
 	public Usuario updateUsuario(Usuario dto) {
-		Usuario usuario = usuarioRepository.findById(dto.getUsuarioId()).orElse(null);
+		/*Usuario usuario = usuarioRepository.findById(dto.getUsuarioId()).orElse(null);
         usuario.setUsuarioId(dto.getUsuarioId());
         usuario.setIdentificacion(dto.getIdentificacion());
         usuario.getCalificaciones(Usuario.builder()
                 .ciudad(dto.getDireccionDto().getCiudad()).calle(dto.getDireccionDto().getCalle()).cp(dto.getDireccionDto().getCp()).build());
-        return usuarioRepository.save(usuario);
+        */return usuarioRepository.save(dto);
 	}
 
 	@Override

@@ -7,8 +7,7 @@ import org.springframework.stereotype.Repository;
 import com.colegio.entity.Usuario;
 
 @EnableScan
-@Repository
-public interface IUsuarioRepository extends CrudRepository<Usuario, String> {
+public interface IUsuarioRepository  {
 
 	boolean existsByIdentificacion(String identificacion);
 }

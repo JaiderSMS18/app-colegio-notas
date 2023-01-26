@@ -27,7 +27,7 @@ public class Usuario {
 	@DynamoDBAttribute
 	private Iterable<Calificacion> calificaciones;
 	
-	public Usuario() {}
+	/*public Usuario() {}
 	
 	public Usuario( String identificacion, String password, Iterable<Calificacion> calificaciones) {
 		this.identificacion = identificacion;
@@ -58,7 +58,7 @@ public class Usuario {
 	}
 	public void setCalificaciones(Iterable<Calificacion> calificaciones) {
 		this.calificaciones = calificaciones;
-	}
+	}*/
 	
 	
 }
